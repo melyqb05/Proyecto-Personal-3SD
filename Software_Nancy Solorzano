@@ -1,0 +1,51 @@
+# Gestión básica de tareas en Scrum
+# Ingeniería de Software - Práctica en Python
+
+print("===================================")
+print("   GESTIÓN DE TAREAS SCRUM")
+print("===================================")
+
+proyecto = input("Ingrese el nombre del proyecto: ")
+sprint = input("Ingrese el número del sprint: ")
+
+print("\nRegistro de tareas")
+
+tarea1 = input("Tarea 1: ")
+estado1 = input("Estado (Pendiente/En progreso/Completada): ")
+
+tarea2 = input("Tarea 2: ")
+estado2 = input("Estado (Pendiente/En progreso/Completada): ")
+
+tarea3 = input("Tarea 3: ")
+estado3 = input("Estado (Pendiente/En progreso/Completada): ")
+
+completadas = 0
+
+if estado1.lower() == "completada":
+    completadas += 1
+
+if estado2.lower() == "completada":
+    completadas += 1
+
+if estado3.lower() == "completada":
+    completadas += 1
+
+porcentaje = (completadas / 3) * 100
+
+print("\n========= RESUMEN DEL SPRINT =========")
+print(f"Proyecto: {proyecto}")
+print(f"Sprint: {sprint}")
+print(f"Tarea 1: {tarea1} - {estado1}")
+print(f"Tarea 2: {tarea2} - {estado2}")
+print(f"Tarea 3: {tarea3} - {estado3}")
+print(f"Tareas completadas: {completadas} de 3")
+print(f"Avance del sprint: {porcentaje:.0f}%")
+
+if porcentaje == 100:
+    print("Sprint finalizado correctamente.")
+elif porcentaje >= 50:
+    print("El sprint presenta un buen avance.")
+else:
+    print("El sprint requiere mayor seguimiento.")
+
+print("\nFin del reporte Scrum.")
