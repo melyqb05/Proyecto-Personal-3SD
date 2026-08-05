@@ -1,0 +1,18 @@
+# Calculadora de Promedios
+
+nombre = input("Ingrese el nombre del estudiante: ")
+
+nota1 = float(input("Ingrese la nota 1: "))
+nota2 = float(input("Ingrese la nota 2: "))
+nota3 = float(input("Ingrese la nota 3: "))
+
+promedio = (nota1 + nota2 + nota3) / 3
+
+print("\n--- RESULTADO ---")
+print("Estudiante:", nombre)
+print("Promedio:", round(promedio, 2))
+
+if promedio >= 7:
+    print("Estado: APROBADO")
+ese:
+    print("Estado: REPROBADO")
