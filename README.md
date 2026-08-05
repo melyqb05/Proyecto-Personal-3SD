@@ -6,7 +6,7 @@
 Melany Del Rocio Quintana Bedor
 
 Nancy Gabriela Solorzano Llerena
-
+Lilibet Joseline Sosa Garcés 
 **Curso:** Ingeniería de Software I
 
 **Paralelo:** 3SD
